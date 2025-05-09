@@ -1,13 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Campus Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Cafe: A food ordering app for Delhi University students to order food, make payments, and track orders.">
+  <meta name="keywords" content="food, campus cafe, Delhi University, food ordering app, payments, order tracking">
+  <meta name="author" content="Shubham Kumar">
+  <title>Campus Cafe - Official Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #3498db, #8e44ad);
+      color: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    header .cta-button {
+      background-color: #e74c3c;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
+
+    header .cta-button:hover {
+      background-color: #c0392b;
+    }
+
+    .section {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #ecf0f1;
+      color: #34495e;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card h3 {
+      font-size: 1.8rem;
+      color: #3498db;
+    }
+
+    .feature-card p {
+      font-size: 1rem;
+      color: #7f8c8d;
+      margin-top: 15px;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .cta-section {
+      background: #3498db;
+      padding: 50px 0;
+      margin-top: 60px;
+      color: white;
+    }
+
+    .cta-section h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .cta-button-cta {
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button-cta:hover {
+      background-color: #c0392b;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .privacy-section {
+      margin-top: 40px;
+    }
+
+    .privacy-section a {
+      color: #e74c3c;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Campus Cafe</h1>
-  <p>Campus Cafe is a food ordering app approved by Delhi University. It allows students to order food from college canteens, make payments, and track orders.</p>
-  <p>Download the app now from Indus Appstore!</p>
-  <a href="privacy.html">Privacy Policy</a>
+
+  <header>
+    <h1>Campus Cafe</h1>
+    <p>Order, Pay, Track - Food Made Easy for Delhi University Students</p>
+  </header>
+
+  <section class="section">
+    <h2>About Campus Cafe</h2>
+    <p>Campus Cafe is an all-in-one food ordering solution for students at Delhi University. Order from college canteens, make payments, and track your orders in real time. All your favorites are just a click away!</p>
+  </section>
+
+  <section class="section">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Order from Campus Canteens</h3>
+        <p>Choose from a wide variety of meals and snacks available at your college canteens. Enjoy freshly prepared food delivered to your location.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Payments</h3>
+        <p>Make fast and secure payments with multiple payment options integrated into the app, so you can pay your way.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Track Your Orders</h3>
+        <p>Know exactly when your food is ready to be delivered. With real-time tracking, you’ll never miss your meal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="download" class="cta-section">
+    <h3>Get Campus Cafe Today</h3>
+    <a href="https://indusappstore.com/app/campus_cafe" class="cta-button-cta">Download Now from Indus Appstore</a>
+  </section> -->
+
+  <section class="section privacy-section">
+    <h2>Privacy Policy</h2>
+    <p>Your privacy is important to us. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your personal data.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Campus Cafe. All Rights Reserved.</p>
+    <p>Contact Us: <a href="mailto:shubhamanuj652@gmail.com">shubhamanuj652@gmail.com</a></p>
+  </footer>
+
 </body>
+
 </html>
